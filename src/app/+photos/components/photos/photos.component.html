@@ -1,0 +1,9 @@
+@defer(when model.isBrowser) {
+	<div class="left-side">
+		<h1 *ngIf="model.title">Hello, {{ model.title }}</h1>
+		<p>Congratulations!</p>
+	</div>
+}
+@placeholder (minimum 1s) {
+	<p>loading...</p>
+}

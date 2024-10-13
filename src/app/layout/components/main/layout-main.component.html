@@ -1,0 +1,21 @@
+<div>
+
+    <header>
+        <span>Header 1</span>
+
+        @defer(when model.isBrowser) {
+            <span *ngIf="!model.init">Header 2</span>
+        }
+    </header>
+
+    <div>
+        <main class="main">
+            <div class="content">
+                 <router-outlet></router-outlet>
+            </div>
+        </main>
+
+        <footer>Footer</footer>
+    </div>
+
+</div>

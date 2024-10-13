@@ -1,0 +1,31 @@
+@defer(when model.isBrowser) {
+	<div class="left-side">
+		<h3>Hello, {{ model.title }}</h3>
+		<p>Congratulations! You are on the Main Page</p>
+	</div>
+
+	<div>
+		<button type="button" (click)="btnClick('sonny')">
+			Sonny
+		</button>
+		&nbsp;
+
+		<button type="button" (click)="btnClick('admin')">
+			Admin
+		</button>
+		&nbsp;
+
+		<button type="button" (click)="btnClick('alan-prof')">
+			Alan's Profile
+		</button>
+		&nbsp;
+
+		<button type="button" (click)="btnClick('alan-prof/photos')">
+			Alan's Profile Photos
+		</button>
+	</div>
+}
+
+@placeholder {
+	<p>loading...</p>
+}

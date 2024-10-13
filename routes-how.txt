@@ -1,0 +1,5 @@
+/
+/sonny
+/admin
+/:user/profile
+/:user/photos
